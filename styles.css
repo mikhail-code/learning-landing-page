@@ -1,0 +1,16 @@
+p{
+    font-size: 80;
+}
+.headerPanel {
+    /* font-size: 36; */
+    /* color: #1100ff; */
+  }
+  .headerPanel.Logo p{
+    font-size: 36px;
+    font-weight: bold;
+  }
+  .headerPanel.Link p{
+    font-size: 18px;
+  }
+
+
