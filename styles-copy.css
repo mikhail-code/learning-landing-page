@@ -47,11 +47,13 @@
   Inline panel settings
   */
   /* Sizes and margins */
-  min-height: 150px;
+  min-height: 50px;
   /* Flex on children*/
   display: flex;
+  flex-direction: row;
+  align-items: stretch;
   /* Flex on this*/
-  flex: none;
+  flex: 1;
   /* Color */
   background-color:rgba(50, 144, 144, 0.507);
 }
@@ -62,11 +64,13 @@
   /* Sizes and margins */
   
   /* Flex on children*/
-
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
   /* Flex on this*/
-  flex-grow: 1;
+  flex: 1;
   /* Color */
-  background-color:rgba(113, 210, 16, 0.507);
+  background-color:rgba(210, 16, 16, 0.507);
 }
 .inline_full-panel {
   /*
@@ -75,96 +79,51 @@
   /* Sizes and margins */
 
   /* Flex on children*/
-
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
   /* Flex on this*/
   flex: 1;
   /* Color */
   background-color:rgba(50, 144, 144, 0.507);
 }
-.specifics_HeaderLogo {
+.HeaderLogo {
   /*
   HeaderLogo specific settings
   */
+  /* Sizes and margins */
+  max-height: 50px;
+  /* Flex on children*/
+  display: flex;
+  flex-direction: row;
+  /* Flex on this*/
+  flex: 1;
+  /* Font */
+  font-weight: bold;
+  /* Color */
+  background-color:rgba(60, 174, 49, 0.507)
+}
+.HeaderLinks {
+  /*HeaderLinks specific settings*/
+  /* Sizes and margins */
+  max-height: 50px;
+  /* Flex on children*/
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  /* Flex on this*/
+  flex: 1;
+  /* Color */
+  background-color:rgba(110, 22, 217, 0.507)
+}
+.HeaderLinks.Link{
+  /*HeaderLinks specific settings*/
   /* Sizes and margins */
 
   /* Flex on children*/
 
   /* Flex on this*/
-  flex: none;
+  flex: 1;
   /* Color */
-  background-color:rgba(60, 174, 49, 0.507)
+  background-color:rgba(163, 18, 149, 0.507)
 }
-.specifics_HeaderLinks {
-  /*
-  HeaderLinks specific settings
-  */
-  /* Sizes and margins */
-
-  /* Flex */
-
-  /* Color */
-  background-color:rgba(207, 217, 22, 0.507)
-}
-
-  .firstBlockRightPanel{
-    flex: 1;
-
-    background-color: aquamarine;
-    display: flex;
-    flex-direction: row;
-    /* flex: 1 1 0%; */
-
-  }
-
-  .firstBlockPanel.Links{
-    height: min-content;
-    flex: 1;
-
-    background-color: aquamarine;
-    display: flex;
-    flex-direction: row;
-    /* flex: 1 1 0%; */
-    justify-content: center;
-    font-size: 18px;
-  }
-  .firstBlockPanel.Link p{
-    flex: 1;
-    height: min-content;
-
-    background-color:azure;
-    /* flex-grow: 1; */
-    margin:1px;
-  }
-
-
-  .button-1 {
-    background-color: #1929bc;
-    border-radius: 8px;
-    border-style: none;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    cursor: pointer;
-    display: inline-block;
-    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    height: 40px;
-    line-height: 20px;
-    list-style: none;
-    margin: 0;
-    outline: none;
-    padding: 10px 16px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    transition: color 100ms;
-    vertical-align: baseline;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-  }
-  
-  .button-1:hover,
-  .button-1:focus {
-    background-color: #384af1;
-  }
