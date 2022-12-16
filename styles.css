@@ -31,12 +31,14 @@ code
   }
 
   .firstBlockLeftPanel{
+    /* flex on this */
     flex: 1;
-
+    /* flex on children of this */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    justify-content: space-evenly;
+    /* colors properties */
+    background-color: rgb(212, 255, 127);
   }
   .firstBlockPanel.Logo{
     display: flex;
@@ -62,35 +64,68 @@ code
   }
 
   .firstBlockRightPanel{
-    flex: 1;
-
-    background-color: aquamarine;
+    /* flex on this */
+    flex: 1; /* shares 1:1 with other children */
+    /* flex on children of this */
     display: flex;
-    flex-direction: row;
-    /* flex: 1 1 0%; */
+    flex-direction: column;
+    justify-content: space-evenly;
 
+    /* size properties */
+    margin: 0;
+    height: 250px;
+    padding-top: 10px;
+    /* colors properties */
+    background-color: aquamarine;
   }
+  .firstBlockRightPanel_topPanel{
+    /* flex on this */
+    flex: none;
 
-  .firstBlockPanel.Links{
+    /* flex on children of this */
+    justify-content: center;
+    display: flex; /* Enables flex for all children. */
+    flex-direction: row;
+
+    /* size properties */
     height: min-content;
-    flex: 1;
+    margin:0px;
+  }
+  .firstBlockRightPanel_topPanel.Links{
+    /* flex on this */
+    flex: none;
 
     background-color: aquamarine;
     display: flex;
     flex-direction: row;
-    /* flex: 1 1 0%; */
     justify-content: center;
+
+    /* size properties */
+    height: min-content;
+    margin:0px;
+
+    /* text properties */
     font-size: 18px;
   }
-  .firstBlockPanel.Link p{
+  .firstBlockRightPanel_topPanel.Link p{
     flex: 1;
     height: min-content;
 
-    background-color:azure;
+    background-color:rgb(175, 64, 71);
     /* flex-grow: 1; */
     margin:1px;
   }
+  .firstBlockRightPanel_mainPanel img{
+    /* flex on this */
+    flex: 1;
 
+    /* flex on children of this */
+    justify-content: center;
+    display: flex; /* Enables flex for all children. */
+    flex-direction: row;
+    /* flex: 1 1 0%; */
+
+  }
 
   .button-1 {
     background-color: #1929bc;
