@@ -107,6 +107,7 @@
 
   /* max-height: 500px; */
   height: 100%;
+  max-height: 200px;
   margin-top: 80px;
   margin-bottom: 80px;
 
@@ -131,6 +132,11 @@
   flex: 1;
   /* Color */
   /* background-color: rgba(50, 144, 144, 0.507); */
+}
+.inline_panel img{
+  height: 100%;
+  min-height: 50px;
+  max-height: 500px;
 }
 .inline_panel.center {
   /*
