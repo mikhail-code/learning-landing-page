@@ -31,6 +31,10 @@
   /* Color */
   /* background-color: rgba(223, 238, 238, 0.507); */
 }
+.workingArea.margin80TopBottom{
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
 
 .horizontalBlock {
   /*
@@ -70,7 +74,8 @@
   Horizontal block settings
   */
   /* Sizes and margins */
-
+  margin-top: 30px;
+  margin-bottom: 80px;
   /* Flex on children*/
   display: flex;
   flex-direction: column;
@@ -79,6 +84,22 @@
   align-content: flex-start;
   /* Color */
   background-color: rgb(255, 255, 255);
+}
+.verticalBlock.third{
+  /*
+  Horizontal block settings
+  */
+  /* Sizes and margins */
+  margin-top: 15px;
+  margin-bottom: 80px;
+  /* Flex on children*/
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  /* Color */
+  background-color: rgb(229, 231, 235);
 }
 .fixedHorizontalBlock {
   /*
@@ -143,7 +164,7 @@
   Inline panel settings
   */
   /* Sizes and margins */
-  min-height: 50px;
+  min-height: 10px;
   /* Flex on children*/
   display: flex;
   flex-direction: row;
@@ -337,13 +358,28 @@ text-align: center;
 }
 .boxDescriptionText.multiline div{
   inline-size: 100%;
-  }
+}
+
+.quoteText{
+  color: rgb(124, 130, 139);
+  text-align: left;
+  inline-size: 100%;
+  font-style: italic;
+}
+.quoteAuthorText{
+  color: black;
+  text-align: right;
+  font-weight: bold;
+  inline-size: 100%;
+}
+
+
+
+
+
 .firstBlockLeftPanel_mainPanel.Button{
   flex:1;
 }
-/* .firstBlockLeftPanel_mainPanel.Button.button-1{
-  flex:1;
-} */
 .button-1 {
   background-color: #1929bc;
   border-radius: 8px;
