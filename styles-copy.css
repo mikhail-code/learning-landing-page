@@ -101,6 +101,39 @@
   /* Color */
   background-color: rgb(229, 231, 235);
 }
+.verticalBlock.fourth{
+  /*
+  Horizontal block settings
+  */
+  /* Sizes and margins */
+  margin-top: 15px;
+  margin-bottom: 80px;
+  /* Flex on children*/
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  /* Color */
+  background-color: rgb(255, 255, 255);
+}
+.verticalBlock.fifth{
+  /*
+  Horizontal block settings
+  */
+  /* Sizes and margins */
+  margin-top: 15px;
+  margin-bottom: 80px;
+  /* Flex on children*/
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  /* Color */
+  background-color: #1F2937;
+  color: white;
+}
 .fixedHorizontalBlock {
   /*
   Horizontal block settings
@@ -360,6 +393,82 @@ text-align: center;
   inline-size: 100%;
 }
 
+.blueBox{
+  /*
+  Inline panel settings
+  */
+  /* Sizes and margins */
+
+  /* max-height: 300px; */
+
+  /* Flex on children*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  /* max-height:fit-content;
+  height: 100%;
+  width: 100%; */
+  border-radius: 8px;
+  /* Flex on this*/
+  flex: 1;
+  /* Color */
+  background-color: rgb(71, 131, 238);
+}
+.blueBox.textContainer{
+  /* Flex on children*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  /* Flex on this*/
+  flex: 1;
+  color: rgb(255, 255, 255);
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.blueBox.text{
+  /* Flex on children*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 50px;
+  /* Flex on this*/
+  flex: 1;
+  color: rgb(255, 255, 255);
+
+}
+.blueBox.buttonContainer{
+    /* Flex on children*/
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch; */
+
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* align-self: stretch; */
+    /* Sizes and margins */
+    min-height: 50px;
+    /* max-height: 300px; */
+  flex: 1;
+}
+
+.blueBox.text.header{
+    /* Flex on this*/
+    flex: 1;
+}
+.blueBox.text.text{
+    /* Flex on this*/
+    flex: 1;
+}
+
 .quoteText{
   color: rgb(124, 130, 139);
   text-align: left;
@@ -381,7 +490,7 @@ text-align: center;
   flex:1;
 }
 .button-1 {
-  background-color: #1929bc;
+  background-color:  rgb(71, 131, 238);
   border-radius: 8px;
   border-style: none;
   box-sizing: border-box;
@@ -407,6 +516,35 @@ text-align: center;
   touch-action: manipulation;
     /* Sizes and margins */
     margin-top: 15px;
+}
+.button-1-onBlue {
+  background-color:  rgb(71, 131, 238);
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-radius: 8px;
+  border-width: medium;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
 }
 
 .button-1:hover,
